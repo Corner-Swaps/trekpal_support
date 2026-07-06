@@ -2,7 +2,7 @@
 
 ## Support
 For any questions, feature requests, or help with TrekPal, please contact us directly via email:
-* **Email:** slava@example.com
+* **Email:** goloubov@gmail.com
 
 ---
 
