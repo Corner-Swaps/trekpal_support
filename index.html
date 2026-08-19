@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrekPal - Official Support & Privacy Policy</title>
+    <style>
+        :root {
+            --bg-dark: #07090e;
+            --card-bg: #101520;
+            --card-border: #1e2638;
+            --accent-blue: #6db3e6;
+            --primary-blue: #2f6cbd;
+            --navy-blue: #123a6e;
+            --green: #3fb950;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        .hero {
+            background: linear-gradient(180deg, #123a6e 0%, #0c182b 60%, var(--bg-dark) 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--card-border);
+        }
+        .icon-container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255,255,255,0.15);
+            background: linear-gradient(180deg, #73b4e6 0%, #73b4e6 33.3%, #346db9 33.3%, #346db9 66.6%, #163b6b 66.6%, #163b6b 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-svg {
+            width: 60px;
+            height: 60px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+            max-width: 600px;
+            margin: 0 auto 16px;
+        }
+        .badge-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: rgba(109, 179, 230, 0.15);
+            color: var(--accent-blue);
+            border: 1px solid rgba(109, 179, 230, 0.3);
+        }
+        .badge.green {
+            background: rgba(63, 185, 80, 0.15);
+            color: var(--green);
+            border-color: rgba(63, 185, 80, 0.3);
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+            margin-top: 18px;
+            margin-bottom: 6px;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        strong {
+            color: var(--text-main);
+        }
+        .contact-box {
+            background: rgba(47, 108, 189, 0.15);
+            border: 1px solid rgba(109, 179, 230, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .contact-email {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .faq-q {
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--card-border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="icon-container">
+            <svg class="icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38 22 C38 15, 62 15, 62 22" stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+                <rect x="22" y="16" width="12" height="9" rx="3" fill="white" transform="rotate(-25 28 20)"/>
+                <rect x="66" y="16" width="12" height="9" rx="3" fill="white" transform="rotate(25 72 20)"/>
+                <rect x="24" y="24" width="52" height="62" rx="24" stroke="white" stroke-width="6" fill="none"/>
+                <rect x="31" y="31" width="38" height="48" rx="17" stroke="white" stroke-width="4" fill="none"/>
+            </svg>
+        </div>
+        <h1>TrekPal Support & Privacy</h1>
+        <p class="tagline">The ultimate local-first travel companion for time zones, live currency, offline phrasebooks, and country safety.</p>
+        <div class="badge-row">
+            <span class="badge green">Zero Data Collection</span>
+            <span class="badge green">100% Free</span>
+            <span class="badge">100% Local Storage</span>
+            <span class="badge">GDPR & CCPA Compliant</span>
+            <span class="badge">BC PIPA / PIPEDA</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Support Section -->
+        <div class="card" id="support">
+            <h2>💬 Customer & Developer Support</h2>
+            <p>We are dedicated to providing a seamless, fast, and completely reliable experience with TrekPal. If you have questions, feedback, bug reports, or feature requests, reach out directly to the developer:</p>
+            
+            <div class="contact-box">
+                <p>Official Developer Support Contact:</p>
+                <a href="mailto:Goloubov@gmail.com" class="contact-email">Goloubov@gmail.com</a>
+                <p style="font-size: 0.8rem; margin-top: 6px; color: var(--text-muted);">Expected response time: within 24–48 hours.</p>
+            </div>
+
+            <h3 style="margin-top: 24px;">Frequently Asked Questions (FAQ)</h3>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: Does TrekPal require an account or internet connection?</div>
+                <p>A: No! TrekPal works 100% offline. No accounts, logins, passwords, or personal setups are ever required. All time zones, phrasebook translations, tipping customs, and safety guides are stored entirely on your device.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: How do I add, remove, or reorder cities?</div>
+                <p>A: Tap the search icon (+) on the top right to search across 10,000+ global cities. Long-press or use the reorder icon to drag cities into your preferred order. Swipe left or tap the red minus icon to delete a city.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: How do live currency rates update?</div>
+                <p>A: When an internet connection is available, TrekPal retrieves public foreign exchange rate tables from <code>open.er-api.com</code> anonymously. These rates are cached offline so you can calculate conversions on planes, trains, or off-grid travels.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: How do I replay the interactive guided tours?</div>
+                <p>A: Go to <strong>Settings</strong> and tap <strong>DEMO RESET</strong>. This allows you to replay interactive animations and walkthroughs anytime.</p>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Section -->
+        <div class="card" id="privacy">
+            <h2>🔒 Privacy Policy & Data Governance</h2>
+            <p><strong>Last Updated:</strong> August 18, 2026</p>
+            <p>This Privacy Policy describes how <strong>TrekPal</strong> handles user privacy and personal data. We believe in absolute privacy: our application is engineered to collect <strong>zero personal information</strong>.</p>
+
+            <h3>1. Zero Data Collection & Local Storage</h3>
+            <p>TrekPal does not harvest, store, or sell any personally identifiable information (PII). All custom cities, color themes, language selections, and travel notes stay strictly within your device's sandboxed local storage (<code>UserDefaults</code>).</p>
+
+            <h3>2. Global Privacy Frameworks Compliance</h3>
+            <p>TrekPal complies with all international and federal data protection legislation:</p>
+            <ul>
+                <li><strong>Canada (PIPEDA & BC PIPA):</strong> British Columbia Personal Information Protection Act and Federal PIPEDA.</li>
+                <li><strong>United States (CCPA / CPRA):</strong> California Consumer Privacy Act and California Privacy Rights Act.</li>
+                <li><strong>European Union & UK (GDPR):</strong> General Data Protection Regulation (Articles 12, 13, 14, and 17).</li>
+                <li><strong>Children's Privacy (COPPA):</strong> Zero personal data collection from children or adults.</li>
+            </ul>
+
+            <h3>3. Third-Party Data Processors</h3>
+            <p>TrekPal maintains a strict zero-data-selling guarantee. Our minimal third-party dependencies are:</p>
+            <ul>
+                <li><strong>Exchange Rates API (<code>open.er-api.com</code>):</strong> Anonymous outgoing HTTPS requests for currency rates. No user identifiers or cookies are transmitted.</li>
+                <li><strong>Apple App Store:</strong> Native app delivery, crash diagnostic logs (if voluntarily enabled via iOS Settings), and on-device text-to-speech audio synthesis.</li>
+            </ul>
+
+            <h3>4. AI & Automated Processing Disclosures</h3>
+            <p>TrekPal's calculations, phrasebook translations, and tipping etiquette are deterministic and processed entirely on-device. No private user searches, notes, or interactions are ever used to train public or foundation AI models.</p>
+
+            <h3>5. 100% Free — No Subscriptions</h3>
+            <p>TrekPal is 100% free with no auto-renewing subscriptions, no in-app purchases, and no payment card information is ever collected or processed.</p>
+
+            <h3>6. Right to Erasure</h3>
+            <p>You can reset all local storage at any time via the <strong>DEMO RESET</strong> feature or by deleting the app from your device, which instantly purges all local data.</p>
+
+            <h3>7. Contact Information</h3>
+            <p>For inquiries regarding data governance, contact: <a href="mailto:Goloubov@gmail.com">Goloubov@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 TrekPal. All rights reserved. Designed with privacy, elegance, and utility.
+    </div>
+</body>
+</html>

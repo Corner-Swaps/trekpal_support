@@ -1,13 +1,20 @@
-# TrekPal Support & Privacy Policy
+# TrekPal - Support & Privacy Policy
 
-## Support
-For any questions, feature requests, or help with TrekPal, please contact us directly via email:
-* **Email:** goloubov@gmail.com
+Welcome to the official support and privacy repository for **TrekPal** (iOS).
+
+Official Live Website: **[https://corner-swaps.github.io/trekpal_support/](https://corner-swaps.github.io/trekpal_support/)**
 
 ---
 
-## Privacy Policy
-TrekPal values your privacy. 
-* The application runs entirely locally on your device.
-* We do not collect, track, store, or share any personal user data, location data, or usage diagnostics.
-* Your custom settings, colors, and calculations remain entirely on your own device.
+## Support
+For any questions, bug reports, or feature requests, contact developer support:
+* **Email:** Goloubov@gmail.com
+* **Response Time:** 24–48 hours
+
+---
+
+## Privacy Policy Summary
+* **Zero Data Collection**: TrekPal does not harvest, store, track, or sell any personal user data.
+* **100% Local-First**: All time zones, custom cities, phrasebooks, and settings reside strictly on your device.
+* **Global Compliance**: Fully compliant with **BC PIPA / PIPEDA** (Canada), **CCPA / CPRA** (USA), **GDPR** (EU/UK), and **COPPA**.
+* **100% Free**: No subscriptions, no in-app purchases, and no hidden fees.
