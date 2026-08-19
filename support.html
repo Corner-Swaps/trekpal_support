@@ -3,75 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - TrekPal</title>
+    <title>TrekPal — Support</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            padding: 48px 24px;
+        }
+        .container {
+            max-width: 680px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fcfcfc;
+        }
+        header {
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eeeeee;
         }
         h1 {
-            color: #0F6E69;
-            border-bottom: 2px solid #E5FAF8;
-            padding-bottom: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            font-size: 0.95rem;
+            color: #666666;
+        }
+        nav {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+            font-size: 0.9rem;
+        }
+        nav a {
+            color: #111111;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        nav a:hover {
+            color: #555555;
+        }
+        section {
+            margin-bottom: 28px;
         }
         h2 {
-            color: #198881;
-            margin-top: 30px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #111111;
+            margin-bottom: 8px;
         }
-        p, li {
-            color: #555;
+        p {
+            font-size: 0.95rem;
+            color: #333333;
+            margin-bottom: 12px;
         }
-        .contact-box {
-            background-color: #E5FAF8;
-            border-left: 4px solid #198881;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
+        a {
+            color: #111111;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
-        .footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #888;
-            border-top: 1px solid #eee;
+        a:hover {
+            color: #555555;
+        }
+        .faq-item {
+            margin-bottom: 18px;
+        }
+        .faq-q {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #111111;
+            margin-bottom: 3px;
+        }
+        footer {
+            margin-top: 48px;
             padding-top: 20px;
+            border-top: 1px solid #eeeeee;
+            font-size: 0.85rem;
+            color: #777777;
         }
     </style>
 </head>
 <body>
-    <h1>TrekPal Support</h1>
-    <p>Welcome to the <strong>TrekPal</strong> Support page. We want to ensure your travel timezone and currency conversion dashboard works smoothly. Find answers below or contact us directly.</p>
+    <div class="container">
+        <header>
+            <h1>TrekPal Support</h1>
+            <p class="subtitle">Help Desk & Frequently Asked Questions</p>
+            <nav>
+                <a href="index.html">Overview</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </nav>
+        </header>
 
-    <h2>Frequently Asked Questions</h2>
-    
-    <h3>1. How do I change the time offset to preview a future date/time?</h3>
-    <p>Simply swipe horizontally (left or right) anywhere on your dashboard list. The timezone card headers will show the updated preview time. To reset back to the current live system time, tap the counter-clockwise circular arrow icon in the top header.</p>
+        <section>
+            <h2>Developer Contact</h2>
+            <p>If you encounter an issue, have questions, or would like to request features, please reach out directly:</p>
+            <p><strong>Email:</strong> <a href="mailto:Goloubov@gmail.com">Goloubov@gmail.com</a></p>
+            <p style="color: #666666; font-size: 0.85rem;">Response time: within 24–48 hours.</p>
+        </section>
 
-    <h3>2. How do I reorder my country cards?</h3>
-    <p>Press and hold down on any country card for 0.3 seconds. Once the card scales slightly and elevates, drag it up or down to your desired position in the sequence, then release.</p>
+        <section>
+            <h2>Frequently Asked Questions</h2>
 
-    <h3>3. Why aren't my currency rates updating?</h3>
-    <p>TrekPal requires an active internet connection on launch to fetch the latest global exchange rates from our secure API partner. If you are offline, the app automatically falls back to secure, built-in offline currency exchange rates so that you can continue converting currencies without interruption.</p>
+            <div class="faq-item">
+                <div class="faq-q">1. How do I change the time offset?</div>
+                <p>Swipe horizontally (left or right) anywhere on your dashboard list. To return to live time, tap the circular reset arrow in the header.</p>
+            </div>
 
-    <h3>4. How does the Travel Phrasebook audio pronunciation work?</h3>
-    <p>Tap the speech bubble icon on any country card to hear high-quality, natural human-like female voice pronunciation (powered by advanced Kokoro TTS and enhanced female voice synthesis pipelines). The app speaks travel phrases with natural pacing and warm cadence.</p>
+            <div class="faq-item">
+                <div class="faq-q">2. How do I reorder country cards?</div>
+                <p>Press and hold any country card for 0.3 seconds until it elevates, then drag up or down to your desired position.</p>
+            </div>
 
-    <h3>5. How do I change my native language?</h3>
-    <p>Tap the Settings tab in the bottom toolbar, then select your preferred language. This automatically translates all travel phrases and local tipping customs across 18 languages.</p>
+            <div class="faq-item">
+                <div class="faq-q">3. Does currency conversion work offline?</div>
+                <p>Yes. TrekPal caches the latest exchange rates and includes a built-in offline currency table for continuous travel use.</p>
+            </div>
 
-    <h2>Still need help?</h2>
-    <div class="contact-box">
-        <p>If you encounter an issue, have a feature request, or need developer assistance, please contact us directly:</p>
-        <p><strong>Direct Developer Support:</strong> <a href="mailto:Goloubov@gmail.com" style="color: #198881; font-weight: bold;">Goloubov@gmail.com</a></p>
-        <p style="font-size: 0.85em; color: #777; margin-top: 5px;">Response time: 24–48 hours.</p>
-    </div>
+            <div class="faq-item">
+                <div class="faq-q">4. How does the Travel Phrasebook pronunciation work?</div>
+                <p>Tap the speech bubble icon on any country card to hear natural, calm female voice pronunciation across international phrases.</p>
+            </div>
 
-    <div class="footer">
-        <p>&copy; 2026 TrekPal Support. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <div class="faq-item">
+                <div class="faq-q">5. How do I change the app language?</div>
+                <p>Open the Settings tab in the bottom toolbar and select your preferred language. This automatically translates all phrases and tipping guidelines.</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 TrekPal. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>

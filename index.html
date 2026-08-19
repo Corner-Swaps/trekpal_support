@@ -3,262 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrekPal - Support, Privacy Policy & Terms of Service</title>
+    <title>TrekPal — Support & Legal</title>
     <style>
-        :root {
-            --bg-page: #ffffff;
-            --text-primary: #111827;
-            --text-secondary: #374151;
-            --text-muted: #6b7280;
-            --border-color: #e5e7eb;
-            --accent: #1e40af;
-            --box-bg: #f9fafb;
-            --badge-green-bg: #ecfdf5;
-            --badge-green-text: #065f46;
-            --badge-green-border: #a7f3d0;
-        }
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-page);
-            color: var(--text-primary);
-            line-height: 1.65;
-            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+            padding: 48px 24px;
         }
         .container {
-            max-width: 760px;
+            max-width: 680px;
             margin: 0 auto;
         }
-        .header {
+        header {
             margin-bottom: 32px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eeeeee;
         }
         h1 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            color: var(--text-primary);
             letter-spacing: -0.5px;
-            margin-bottom: 6px;
+            color: #111111;
+            margin-bottom: 4px;
         }
         .subtitle {
-            font-size: 1.05rem;
-            color: var(--text-muted);
+            font-size: 0.95rem;
+            color: #666666;
         }
-        .badge-row {
+        nav {
             display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-top: 14px;
-        }
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            background: var(--box-bg);
-            color: var(--text-secondary);
-            border: 1px solid var(--border-color);
-        }
-        .badge.green {
-            background: var(--badge-green-bg);
-            color: var(--badge-green-text);
-            border-color: var(--badge-green-border);
-        }
-        .nav-bar {
-            display: flex;
-            gap: 12px;
-            margin: 24px 0 32px 0;
-            padding-bottom: 16px;
-            border-bottom: 1px solid var(--border-color);
-            flex-wrap: wrap;
-        }
-        .nav-button {
-            padding: 8px 16px;
-            border-radius: 8px;
+            gap: 16px;
+            margin-top: 16px;
             font-size: 0.9rem;
-            font-weight: 600;
-            text-decoration: none;
-            background: var(--box-bg);
-            color: var(--accent);
-            border: 1px solid var(--border-color);
-            transition: all 0.15s ease;
         }
-        .nav-button:hover {
-            background: #eef2ff;
-            border-color: #c7d2fe;
+        nav a {
+            color: #111111;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
-        .nav-button.active {
-            background: var(--accent);
-            color: #ffffff;
-            border-color: var(--accent);
+        nav a:hover {
+            color: #555555;
         }
-        .section {
+        section {
             margin-bottom: 36px;
         }
         h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 14px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #111111;
+            margin-bottom: 12px;
         }
         h3 {
-            font-size: 1.05rem;
+            font-size: 1.0rem;
             font-weight: 600;
-            color: var(--text-primary);
-            margin-top: 18px;
-            margin-bottom: 6px;
+            color: #111111;
+            margin-top: 20px;
+            margin-bottom: 4px;
         }
         p {
-            color: var(--text-secondary);
             font-size: 0.95rem;
+            color: #333333;
             margin-bottom: 12px;
         }
         ul {
             padding-left: 20px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
         li {
-            color: var(--text-secondary);
             font-size: 0.95rem;
+            color: #333333;
             margin-bottom: 6px;
         }
-        strong {
-            color: var(--text-primary);
-        }
-        .info-box {
-            background: var(--box-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 16px 18px;
-            margin: 14px 0;
-        }
-        .info-box p {
-            margin: 0;
-        }
-        .contact-link {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--accent);
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 4px;
-        }
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-        .faq-item {
-            margin-bottom: 16px;
-        }
-        .faq-q {
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-            font-size: 0.95rem;
-        }
-        .footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            text-align: center;
-        }
         a {
-            color: var(--accent);
-            text-decoration: none;
+            color: #111111;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
         a:hover {
-            text-decoration: underline;
+            color: #555555;
+        }
+        .faq-item {
+            margin-bottom: 18px;
+        }
+        .faq-q {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #111111;
+            margin-bottom: 3px;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #eeeeee;
+            font-size: 0.85rem;
+            color: #777777;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <div class="header">
+        <header>
             <h1>TrekPal</h1>
-            <p class="subtitle">Official Support, Privacy Policy & Terms of Service Hub</p>
-            <div class="badge-row">
-                <span class="badge green">Zero Data Collection</span>
-                <span class="badge green">100% Free Utility</span>
-                <span class="badge">GDPR & CCPA Compliant</span>
-                <span class="badge">PIPEDA & BC PIPA</span>
-            </div>
-        </div>
+            <p class="subtitle">Support, Privacy Policy & Terms of Service</p>
+            <nav>
+                <a href="#support">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </nav>
+        </header>
 
-        <!-- Quick Navigation -->
-        <div class="nav-bar">
-            <a href="#support" class="nav-button active">Support & Help</a>
-            <a href="privacy.html" class="nav-button">Privacy Policy</a>
-            <a href="terms.html" class="nav-button">Terms of Service & EULA</a>
-        </div>
+        <section id="support">
+            <h2>Support & Contact</h2>
+            <p>For questions, technical feedback, or assistance with TrekPal, please contact developer support directly:</p>
+            <p><strong>Email:</strong> <a href="mailto:Goloubov@gmail.com">Goloubov@gmail.com</a></p>
+            <p style="color: #666666; font-size: 0.85rem;">Response time: within 24–48 hours.</p>
+        </section>
 
-        <!-- Support Section -->
-        <div class="section" id="support">
-            <h2>Support & Contact Information</h2>
-            <p>Welcome to the <strong>TrekPal</strong> official support portal. If you have questions, encounter technical issues, or have feature suggestions, please reach out directly:</p>
-            
-            <div class="info-box">
-                <p><strong>Direct Developer & Legal Support:</strong></p>
-                <a href="mailto:Goloubov@gmail.com" class="contact-link">Goloubov@gmail.com</a>
-                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Support response guarantee: within 24–48 business hours.</p>
-            </div>
-        </div>
+        <section>
+            <h2>Frequently Asked Questions</h2>
 
-        <!-- FAQ Section -->
-        <div class="section">
-            <h2>Frequently Asked Questions (FAQ)</h2>
-            
             <div class="faq-item">
-                <div class="faq-q">1. Does TrekPal require an active internet connection?</div>
-                <p>No. TrekPal is designed as a 100% offline-first utility. Time zone offsets, travel phrasebooks, tipping guidelines, and tap water safety advisories are packaged directly on your device.</p>
+                <div class="faq-q">1. Does TrekPal require an internet connection?</div>
+                <p>No. TrekPal is designed as a 100% offline-first utility. Time zones, phrasebooks, tipping etiquette, and safety guidelines are stored entirely on your device.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">2. How are currency exchange rates updated?</div>
-                <p>When an internet connection is present at launch, TrekPal anonymously fetches public foreign exchange rate tables from <code>open.er-api.com</code> and caches them locally for offline travel. If offline, the app automatically uses internal fallback rates.</p>
+                <div class="faq-q">2. How are currency rates updated?</div>
+                <p>When connected to the internet, TrekPal anonymously fetches public foreign exchange rate tables from <code>open.er-api.com</code> and caches them locally for offline travel.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">3. How do I adjust target time offsets?</div>
-                <p>Swipe horizontally (left or right) anywhere on your dashboard list to preview future or past hours across all saved countries. Tap the counter-clockwise circular reset button in the header to return to live time.</p>
+                <div class="faq-q">3. How do I change target time offsets?</div>
+                <p>Swipe horizontally on your dashboard to shift target time across all countries. Tap the circular reset arrow in the header to return to current live time.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">4. How does the Travel Phrasebook audio pronunciation work?</div>
-                <p>Tap any speech bubble on your country cards to hear natural, warm female voice pronunciations (powered by advanced Kokoro TTS and enhanced female voice synthesis pipelines) with natural human pacing across international dialects.</p>
+                <div class="faq-q">4. How does the Travel Phrasebook pronunciation work?</div>
+                <p>Tap the speech bubble icon on any country card to hear natural, calm female voice pronunciation across international phrases.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">5. How do I delete all my data and restore factory defaults?</div>
-                <p>Open the <strong>Settings</strong> tab in the app and tap <strong>"ERASE ALL DATA & RESET"</strong>. Confirm the prompt to immediately wipe all local preferences, saved cities, and custom notes.</p>
+                <div class="faq-q">5. How do I delete all my data and reset the app?</div>
+                <p>Open the Settings tab in the app and tap "ERASE ALL DATA & RESET". Confirm the prompt to immediately wipe all local preferences, saved cities, and custom notes.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- Legal Summary Section -->
-        <div class="section">
-            <h2>Legal & Compliance Overview</h2>
-            <div class="info-box">
-                <p><strong>Privacy & Compliance Summary:</strong> TrekPal collects zero personal data, maintains no remote databases, requires no user accounts, sets no tracking cookies, and runs 100% locally on your device. All operations comply with GDPR, CCPA/CPRA, PIPEDA, and Apple App Store Review Guidelines.</p>
-            </div>
+        <section>
+            <h2>Legal & Compliance</h2>
+            <p>TrekPal collects zero personal data, maintains no remote databases, requires no user accounts, sets no tracking cookies, and runs 100% locally on your device. Operations comply with GDPR, CCPA/CPRA, PIPEDA, and Apple App Store Review Guidelines.</p>
             <ul>
-                <li><a href="privacy.html"><strong>Read the Full Privacy Policy &rarr;</strong></a></li>
-                <li><a href="terms.html"><strong>Read the Full Terms of Service & EULA &rarr;</strong></a></li>
+                <li><a href="privacy.html">Read the Privacy Policy</a></li>
+                <li><a href="terms.html">Read the Terms of Service & EULA</a></li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Footer -->
-        <div class="footer">
-            &copy; 2026 TrekPal. All rights reserved. Designed with privacy, transparency, and user sovereignty.
-        </div>
+        <footer>
+            &copy; 2026 TrekPal. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>
